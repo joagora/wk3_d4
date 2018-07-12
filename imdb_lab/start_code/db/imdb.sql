@@ -1,0 +1,15 @@
+DROP TABLE ;
+DROP TABLE ;
+DROP TABLE ;
+
+CREATE TABLE stars (
+
+);
+
+CREATE TABLE movies(
+
+);
+
+CREATE TABLE castings(
+
+);
