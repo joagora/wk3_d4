@@ -19,8 +19,21 @@ class Casting
   end
 
   # Read
+  def movie
+    sql = "SELECT * FROM movies WHERE id = $1;"
+    values = [@movie_id]
+    result = SqlRunner.run(sql, values)
+    movie = Movie.new(result.first)
+    return movie
+  end
 
-
+  def star
+    sql = "SELECT * FROM stars WHERE id = $1;"
+    values = [@star_id]
+    result = SqlRunner.run(sql, values)
+    star = Star.new(result.first)
+    return star
+  end
   # Update
 
 
